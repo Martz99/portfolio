@@ -6,6 +6,7 @@
   background-position: right;
   width: 100%;
   height: 100vh;
+  text-align: center;
 }
 .cover-img {
 
@@ -31,7 +32,7 @@
   color: white;
   background-color: #25378c;
   border: 2px solid #25378c;
-  border-radius: 5px;
+  /* border-radius: 5px;*/
   outline: none;
 }
 
@@ -52,7 +53,7 @@
   color: $tertiary_color;
   background-color: transparent;
   border: 2px solid $tertiary_color;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   outline: none;
 }
 
@@ -72,7 +73,7 @@
 .main .bi-linkedin,
 .main .bi-instagram,
 .main .bi-github {
-  font-size: 15px;
+  font-size: 1em;
   color: #aeaeae;
   padding: 7px 10px;
   border: solid 2px;
@@ -83,7 +84,7 @@
 .main .bi-linkedin:hover,
 .main .bi-instagram:hover,
 .main .bi-github:hover {
-  font-size: 15px;
+  font-size: 1em;
   color: $tertiary_color;
   padding: 7px 10px;
   border: solid 2px;
@@ -91,7 +92,7 @@
 }
 
 .main .bi-arrow-down {
-  font-size: 20px;
+  font-size: 1.2em;
   color: $tertiary_color;
   padding: 6px 11px;
   border: solid 2px;
@@ -116,5 +117,46 @@
   100% {
     transform: scale(1.2, 1.2);
     opacity: 1;
+  }
+}
+
+/* ------ Skills ------*/
+.skills {
+  height: 100vh;
+}
+
+.skills .col-icon-text {
+  flex-direction: column;
+}
+
+h3 {
+  color: #25378c;
+  font-width: 700;
+}
+
+.skills .bi-vector-pen,
+.skills .bi-laptop,
+.skills .bi-code-slash {
+  font-size: 1em;
+  color: #aeaeae;
+  padding: 7px 10px;
+  border: solid 2px;
+  border-radius: 100%;
+}
+
+.skills .bi-vector-pen:hover,
+.skills .bi-laptop:hover,
+.skills .bi-code-slash:hover {
+  font-size: 1em;
+  color: $tertiary_color;
+  padding: 7px 10px;
+  border: solid 2px;
+  border-radius: 100%;
+}
+
+
+@include media-breakpoint-up(lg) {
+  .main {
+    text-align: left;
   }
 }

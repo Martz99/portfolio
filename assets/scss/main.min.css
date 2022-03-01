@@ -7895,7 +7895,8 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   background-size: contain;
   background-position: right;
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
 
 .main h2, .main .h2 {
   font-size: 3rem;
@@ -7916,7 +7917,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   color: white;
   background-color: #25378c;
   border: 2px solid #25378c;
-  border-radius: 5px;
+  /* border-radius: 5px;*/
   outline: none; }
 
 .main .bt1:hover {
@@ -7935,7 +7936,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   color: #90E0EF;
   background-color: transparent;
   border: 2px solid #90E0EF;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   outline: none; }
 
 .main .bt2:hover {
@@ -7952,7 +7953,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
 .main .bi-linkedin,
 .main .bi-instagram,
 .main .bi-github {
-  font-size: 15px;
+  font-size: 1em;
   color: #aeaeae;
   padding: 7px 10px;
   border: solid 2px;
@@ -7962,14 +7963,14 @@ a.dropdown-item:focus, a.dropdown-item:hover {
 .main .bi-linkedin:hover,
 .main .bi-instagram:hover,
 .main .bi-github:hover {
-  font-size: 15px;
+  font-size: 1em;
   color: #90E0EF;
   padding: 7px 10px;
   border: solid 2px;
   border-radius: 100%; }
 
 .main .bi-arrow-down {
-  font-size: 20px;
+  font-size: 1.2em;
   color: #90E0EF;
   padding: 6px 11px;
   border: solid 2px;
@@ -7989,3 +7990,36 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   100% {
     transform: scale(1.2, 1.2);
     opacity: 1; } }
+
+/* ------ Skills ------*/
+.skills {
+  height: 100vh; }
+
+.skills .col-icon-text {
+  flex-direction: column; }
+
+h3, .h3 {
+  color: #25378c;
+  font-width: 700; }
+
+.skills .bi-vector-pen,
+.skills .bi-laptop,
+.skills .bi-code-slash {
+  font-size: 1em;
+  color: #aeaeae;
+  padding: 7px 10px;
+  border: solid 2px;
+  border-radius: 100%; }
+
+.skills .bi-vector-pen:hover,
+.skills .bi-laptop:hover,
+.skills .bi-code-slash:hover {
+  font-size: 1em;
+  color: #90E0EF;
+  padding: 7px 10px;
+  border: solid 2px;
+  border-radius: 100%; }
+
+@media (min-width: 992px) {
+  .main {
+    text-align: left; } }
