@@ -32,7 +32,6 @@
   color: white;
   background-color: #25378c;
   border: 2px solid #25378c;
-  /* border-radius: 5px;*/
   outline: none;
 }
 
@@ -53,7 +52,6 @@
   color: $tertiary_color;
   background-color: transparent;
   border: 2px solid $tertiary_color;
-  /*border-radius: 5px;*/
   outline: none;
 }
 
@@ -92,6 +90,7 @@
 }
 
 .main .bi-arrow-down {
+
   font-size: 1.2em;
   color: $tertiary_color;
   padding: 6px 11px;
@@ -99,6 +98,9 @@
   border-radius: 100%;
   margin-top: 0px;
   cursor: pointer;
+  animation: none;
+  transition-property: animation;
+  transition-duration: 0.6s;
 }
 
 .main .bi-arrow-down:hover {
@@ -125,8 +127,10 @@
   height: 100vh;
 }
 
-.skills .col-icon-text {
-  flex-direction: column;
+.col-icon-text.col-12.col-lg-4.py-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h3 {
@@ -154,9 +158,285 @@ h3 {
   border-radius: 100%;
 }
 
+/* card */
+.card {
+  border: none !important;
+  box-shadow: 0.15rem 0.15rem 0.4em #efefef;
+}
+
+.card-body {
+  background-color: transparent;
+}
+
+.skills .card-header {
+    color: $secondary_color;
+    padding: 10px 20px;
+    margin-left: 1rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: $light;
+    box-shadow: 0.15rem 0.15rem 0.4em #efefef;
+    border: 0px !important;
+}
+
+.skills .card-header:first-child {
+  color: $secondary_color;
+  background-color: $light;
+  border-radius: 5px;
+  border: 0px !important;
+}
+
+
+p.card {
+  color: $primary_color;
+}
+
+a.btn.btn-card-light {
+  text-align: center;
+  color: $secondary_color;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0px;
+
+}
+
+a.btn.btn-card-light:hover {
+  text-decoration:underline;
+}
+
+.progetti-recenti h3,
+.progetti-recenti p {
+  text-align:center;
+}
 
 @include media-breakpoint-up(lg) {
   .main {
     text-align: left;
   }
+}
+
+/* ------ Progetti Recenti ------ */
+.progetti-recenti {
+  height: 100vh;
+}
+
+.progetti-recenti .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.progetti-recenti .row-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.progetti-recenti .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.progetti-recenti .card {
+  width: 75% !important;
+  transition-duration: 0.6s;
+  background-color: $light;
+}
+.progetti-recenti .card-header {
+    color: $secondary_color;
+    padding: 10px 20px;
+    margin-left: 1rem;
+    margin-right: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0.15rem 0.15rem 0.4em #efefef;
+    border: 0px !important;
+}
+
+.progetti-recenti .card-header:first-child {
+  color: $secondary_color;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 0px !important;
+}
+
+.progetti-recenti .card-01:hover {
+  box-shadow: 0.3rem 0.3rem 0.6em #da890f20;
+  transform: scale(1.08, 1.08);
+  border: 3px solid;
+  border-color:#da890f;
+}
+
+.progetti-recenti .card-02:hover {
+  box-shadow: 0.3rem 0.3rem 0.6em #38D80020;
+  transform: scale(1.08, 1.08);
+  border: 3px solid;
+  border-color:#38D800;
+}
+
+.progetti-recenti .card-03:hover {
+  box-shadow: 0.3rem 0.3rem 0.6em #00B4D820;
+  transform: scale(1.08, 1.08);
+  border: 3px solid;
+  border-color:#00B4D800;
+}
+
+p.card-text {
+  text-align:left;
+}
+
+.col-lg-3.button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.progetti-recenti .bi-chevron-right {
+  font-size: 1em;
+  padding: 7px 12px;
+  border: solid 2px;
+  border-radius: 100%;
+}
+
+/* card-01 */
+
+.progetti-recenti .card-01 .bi-chevron-right {
+  color: #FFFFFF;
+  border-color: #DA890F;
+  background-color: #DA890F;
+  text-align: bottom-right;
+}
+
+.progetti-recenti .card-01 .bi-chevron-right:hover {
+  color: #DA890F;
+  border-color: #DA890F;
+  background-color: transparent;
+}
+
+.card-01 h4.card-text {
+  color: #5E3403;
+  margin: 0;
+}
+
+
+.card-01 p.card-text {
+  color: #5E3403;
+}
+
+.card-01 .card-header:first-child {
+  color: #DA890F;
+}
+
+/* card 02 */
+
+.progetti-recenti .card-02 .bi-chevron-right {
+  color: #FFFFFF;
+  border-color: #38D800;
+  background-color: #38D800;
+  text-align: bottom-right;
+}
+
+.progetti-recenti .card-02 .bi-chevron-right:hover {
+  color: #38D800;
+  border-color: #38D800;
+  background-color: transparent;
+}
+
+.card-02 h4.card-text {
+  color: #0A5E03;
+  margin: 0;
+}
+
+
+.card-02 p.card-text {
+  color: #0A5E03;
+}
+
+.card-02 .card-header:first-child {
+  color: #38D800;
+}
+
+/* card 03 */
+
+.progetti-recenti .card-03 .bi-chevron-right {
+  color: #FFFFFF;
+  border-color: #00B4D8;
+  background-color: #00B4D8;
+  text-align: bottom-right;
+}
+
+.progetti-recenti .card-03 .bi-chevron-right:hover {
+  color: #00B4D8;
+  border-color: #00B4D8;
+  background-color: transparent;
+}
+
+.card-03 h4.card-text {
+  color: #03045E;
+  margin: 0;
+}
+
+
+.card-03 p.card-text {
+  color: #03045E;
+}
+
+.card-03 .card-header:first-child {
+  color: #00B4D8;
+}
+
+/* ------ proposte di lavoro ------ */
+
+.proposte-lavoro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.proposte-lavoro .bt1 {
+  height: auto;
+  width: auto;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: #25378c;
+  border: 2px solid #25378c;
+  outline: none;
+}
+
+.proposte-lavoro .bt1:hover {
+  color: #FFFFFF;
+  background-color: #0077B6;
+  border-color: #0077B6;
+  transition: 0.5s;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.10);
+}
+
+.proposte-lavoro .bt2 {
+  height: auto;
+  width: auto;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px 10px 20px;
+  color: $tertiary_color;
+  background-color: transparent;
+  border: 2px solid $tertiary_color;
+  outline: none;
+}
+
+.proposte-lavoro .bt2:hover {
+  color: $secondary_color;
+  background-color: #FFF;
+  border-color: $secondary_color;
+  transition: 0.5s;
 }
