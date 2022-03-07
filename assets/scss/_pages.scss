@@ -1,13 +1,14 @@
 // main: main.scss
 
 .main {
-  background: url(../img/responsive3.png) no-repeat;
-  background-size: contain;
+  background: url(../img/prova01.png) no-repeat;
+  background-size: 55%;
   background-position: right;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
 }
+
 .cover-img {
 
 }
@@ -33,14 +34,16 @@
   background-color: #25378c;
   border: 2px solid #25378c;
   outline: none;
+  transition-duration: 0.6s;
 }
 
 .main .bt1:hover {
   color: #FFFFFF;
-  background-color: #0077B6;
-  border-color: #0077B6;
+  background-color: #25378c;
+  border-color: #25378c;/*#0077B6;*/
   transition: 0.5s;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.10);
+  box-shadow: 0.3rem 0.3rem 0.6em $light;
+  transform: scale(1.08, 1.08);
 }
 
 .main .bt2 {
@@ -124,7 +127,8 @@
 
 /* ------ Skills ------*/
 .skills {
-  height: 100vh;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .col-icon-text.col-12.col-lg-4.py-5 {
@@ -136,6 +140,10 @@
 h3 {
   color: #25378c;
   font-width: 700;
+}
+
+.row.icon {
+    justify-content: center;
 }
 
 .skills .bi-vector-pen,
@@ -210,15 +218,9 @@ a.btn.btn-card-light:hover {
   text-align:center;
 }
 
-@include media-breakpoint-up(lg) {
-  .main {
-    text-align: left;
-  }
-}
-
 /* ------ Progetti Recenti ------ */
 .progetti-recenti {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .progetti-recenti .row {
@@ -233,9 +235,8 @@ a.btn.btn-card-light:hover {
   justify-content: space-around;
 }
 
-.progetti-recenti .col-lg-4 {
+.progetti-recenti .col-lg-4{
     flex: 0 0 auto;
-    width: 33.33333333%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,6 +247,7 @@ a.btn.btn-card-light:hover {
   transition-duration: 0.6s;
   background-color: $light;
 }
+
 .progetti-recenti .card-header {
     color: $secondary_color;
     padding: 10px 20px;
@@ -287,10 +289,24 @@ a.btn.btn-card-light:hover {
 }
 
 p.card-text {
-  text-align:left;
+  text-align: center;
 }
 
-.col-lg-3.button {
+h4.card-text {
+  text-align: center;
+}
+
+.progetti-recenti .card .col-md-3 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.col-md-3 .button {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
@@ -400,6 +416,7 @@ p.card-text {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    text-align: center;
 }
 
 .proposte-lavoro .bt1 {
@@ -412,14 +429,16 @@ p.card-text {
   background-color: #25378c;
   border: 2px solid #25378c;
   outline: none;
+  transition-duration: 0.6s;
 }
 
 .proposte-lavoro .bt1:hover {
   color: #FFFFFF;
-  background-color: #0077B6;
-  border-color: #0077B6;
+  background-color: #25378c;
+  border-color: #25378c;/*#0077B6;*/
   transition: 0.5s;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.10);
+  box-shadow: 0.3rem 0.3rem 0.6em $light;
+  transform: scale(1.08, 1.08);
 }
 
 .proposte-lavoro .bt2 {
@@ -439,4 +458,77 @@ p.card-text {
   background-color: #FFF;
   border-color: $secondary_color;
   transition: 0.5s;
+}
+
+/* ------ Recensioni ------*/
+.recensioni {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.recensioni .bt1 {
+  height: auto;
+  width: auto;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  background-color: #25378c;
+  border: 2px solid #25378c;
+  outline: none;
+  transition-duration: 0.6s;
+}
+
+.recensioni .bt1:hover {
+  color: #FFFFFF;
+  background-color: #25378c;
+  border-color: #25378c;/*#0077B6;*/
+  transition: 0.5s;
+  box-shadow: 0.3rem 0.3rem 0.6em $light;
+  transform: scale(1.08, 1.08);
+}
+
+
+@include media-breakpoint-up(md) {
+  /*-- progetti recenti --*/
+  h4.card-text {
+    text-align: left;
+  }
+  p.card-text {
+    text-align:left;
+  }
+  .progetti-recenti .card .col-md-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .progetti-recenti .card .col-md-3 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+}
+@include media-breakpoint-up(lg) {
+  .main,
+  .skills,
+  .proposte-lavoro,
+  .recensioni
+   {
+    text-align: left;
+  }
+
+  /*-- Skills --*/
+  .row.icon {
+      justify-content: left;
+  }
+
+
+
 }
