@@ -1,9 +1,10 @@
 // main: main.scss
 
 .main {
-  background: url(../img/prova01.png) no-repeat;
-  background-size: 55%;
-  background-position: right;
+  background: url(../img/home/Rocket.gif) no-repeat;
+  background-size: 70%;
+  background-position-x: right;
+  background-position-y: bottom;
   width: 100%;
   min-height: 100vh;
   text-align: center;
@@ -129,6 +130,8 @@
 .skills {
   min-height: 100vh;
   text-align: center;
+  background-color: #CAF0F8;
+  margin-top: -2px;
 }
 
 .col-icon-text.col-12.col-lg-4.py-5 {
@@ -165,6 +168,14 @@ h3 {
   border: solid 2px;
   border-radius: 100%;
 }
+
+.skills .card03,
+.skills .card04 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+  }
 
 /* card */
 .card {
@@ -411,6 +422,10 @@ h4.card-text {
 /* ------ proposte di lavoro ------ */
 
 .proposte-lavoro {
+    background: url(../img/home/mobileUX.gif) no-repeat;
+    background-size: 50%;
+    background-position-x: left;
+    background-position-y: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -462,6 +477,10 @@ h4.card-text {
 
 /* ------ Recensioni ------*/
 .recensioni {
+  background: url(../img/home/review.gif) no-repeat;
+  background-size: 50%;
+  background-position-x: right;
+  background-position-y: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -491,6 +510,20 @@ h4.card-text {
   box-shadow: 0.3rem 0.3rem 0.6em $light;
   transform: scale(1.08, 1.08);
 }
+
+.review {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img-review {
+  width: 160%;
+}
+
+
 
 
 @include media-breakpoint-up(md) {

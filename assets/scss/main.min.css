@@ -7891,9 +7891,10 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   xxl: 1400px
 );*/
 .main {
-  background: url(../img/prova01.png) no-repeat;
-  background-size: 55%;
-  background-position: right;
+  background: url(../img/home/Rocket.gif) no-repeat;
+  background-size: 70%;
+  background-position-x: right;
+  background-position-y: bottom;
   width: 100%;
   min-height: 100vh;
   text-align: center; }
@@ -7998,7 +7999,9 @@ a.dropdown-item:focus, a.dropdown-item:hover {
 /* ------ Skills ------*/
 .skills {
   min-height: 100vh;
-  text-align: center; }
+  text-align: center;
+  background-color: #CAF0F8;
+  margin-top: -2px; }
 
 .col-icon-text.col-12.col-lg-4.py-5 {
   display: flex;
@@ -8029,6 +8032,13 @@ h3, .h3 {
   padding: 7px 10px;
   border: solid 2px;
   border-radius: 100%; }
+
+.skills .card03,
+.skills .card04 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end; }
 
 /* card */
 .card {
@@ -8228,6 +8238,10 @@ h4.card-text, .card-text.h4 {
 
 /* ------ proposte di lavoro ------ */
 .proposte-lavoro {
+  background: url(../img/home/mobileUX.gif) no-repeat;
+  background-size: 50%;
+  background-position-x: left;
+  background-position-y: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8275,6 +8289,10 @@ h4.card-text, .card-text.h4 {
 
 /* ------ Recensioni ------*/
 .recensioni {
+  background: url(../img/home/review.gif) no-repeat;
+  background-size: 50%;
+  background-position-x: right;
+  background-position-y: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -8302,6 +8320,16 @@ h4.card-text, .card-text.h4 {
   transition: 0.5s;
   box-shadow: 0.3rem 0.3rem 0.6em #f8f9fa;
   transform: scale(1.08, 1.08); }
+
+.review {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.img-review {
+  width: 160%; }
 
 @media (min-width: 768px) {
   /*-- progetti recenti --*/
