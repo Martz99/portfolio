@@ -12,6 +12,38 @@ h6 {
   color: $primary_color;
 }
 
+nav.breadcrumb-nav {
+    margin-top: 83.25px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 0;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0px !important;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+  text-decoration: none !important;
+  color: $secondary_color !important;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline !important;
+}
+
+
+
+/*------ HOME ------*/
 
 .main {
   background: url(../img/home/Rocket.gif) no-repeat;
@@ -496,34 +528,7 @@ h4.card-text {
 
 
 /*------ CONTACT ------*/
-nav.breadcrumb-nav {
-    margin-top: 83.25px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #e9ecef;
-}
 
-.breadcrumb {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 0 0;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    margin-bottom: 0px !important;
-    list-style: none;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-}
-
-.breadcrumb a {
-  text-decoration: none !important;
-  color: $secondary_color !important;
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline !important;
-}
 .contact h2 {
   text-align: center;
   margin-top: 20px;
@@ -610,6 +615,47 @@ img.rounded.mx-auto.d-block.profile {
  .download-cv .container {
   text-align: center !important;
 }
+
+/*------ GRAPHIC PORTFOLIO ------*/
+
+.graphic h2 {
+  text-align: center !important;
+  margin-top: 20px !important;
+}
+
+
+.number {
+    display: flex;
+    width: 60%;
+    margin-right: 0px;
+    background-color: #25378c;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.number h5 {
+  margin: 0.5rem !important;
+  color: #FFFFFF;
+}
+
+.graphic h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 @include media-breakpoint-up(lg) {
   .main,

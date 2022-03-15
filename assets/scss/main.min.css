@@ -7901,6 +7901,32 @@ h4, .h4 {
 h6, .h6 {
   color: #585858; }
 
+nav.breadcrumb-nav {
+  margin-top: 83.25px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e9ecef; }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 0;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-bottom: 0px !important;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px; }
+
+.breadcrumb a {
+  text-decoration: none !important;
+  color: #00B4D8 !important; }
+
+.breadcrumb a:hover {
+  text-decoration: underline !important; }
+
+/*------ HOME ------*/
 .main {
   background: url(../img/home/Rocket.gif) no-repeat;
   background-size: 70%;
@@ -8298,31 +8324,6 @@ h4.card-text, .card-text.h4 {
     align-items: center; } }
 
 /*------ CONTACT ------*/
-nav.breadcrumb-nav {
-  margin-top: 83.25px;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #e9ecef; }
-
-.breadcrumb {
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0 0;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-  margin-bottom: 0px !important;
-  list-style: none;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px; }
-
-.breadcrumb a {
-  text-decoration: none !important;
-  color: #00B4D8 !important; }
-
-.breadcrumb a:hover {
-  text-decoration: underline !important; }
-
 .contact h2, .contact .h2 {
   text-align: center;
   margin-top: 20px; }
@@ -8393,6 +8394,31 @@ img.rounded.mx-auto.d-block.profile {
 
 .download-cv .container {
   text-align: center !important; }
+
+/*------ GRAPHIC PORTFOLIO ------*/
+.graphic h2, .graphic .h2 {
+  text-align: center !important;
+  margin-top: 20px !important; }
+
+.number {
+  display: flex;
+  width: 60%;
+  margin-right: 0px;
+  background-color: #25378c;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column; }
+
+.number h5, .number .h5 {
+  margin: 0.5rem !important;
+  color: #FFFFFF; }
+
+.graphic h1, .graphic .h1 {
+  text-align: center;
+  margin-top: 20px; }
 
 @media (min-width: 992px) {
   .main,
