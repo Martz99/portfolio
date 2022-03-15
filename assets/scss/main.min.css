@@ -7807,6 +7807,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
   border-bottom: 1px solid #e9ecef; }
 
+/* display font-size */
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -7890,6 +7891,16 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   xl: 1200px,
   xxl: 1400px
 );*/
+h1, .h1 {
+  font-size: 1.2rem;
+  color: #25378c; }
+
+h4, .h4 {
+  color: #25378c; }
+
+h6, .h6 {
+  color: #585858; }
+
 .main {
   background: url(../img/home/Rocket.gif) no-repeat;
   background-size: 70%;
@@ -7899,17 +7910,12 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   min-height: 100vh;
   text-align: center; }
 
-.main h2, .main .h2 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #25378c; }
-
 .main h4, .main .h4 {
   font-size: 1.7rem;
   font-weight: 500;
   color: #90E0EF; }
 
-.main .bt1 {
+.bt1 {
   height: auto;
   width: auto;
   font-size: 18px;
@@ -7921,7 +7927,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   outline: none;
   transition-duration: 0.6s; }
 
-.main .bt1:hover {
+.bt1:hover {
   color: #FFFFFF;
   background-color: #25378c;
   border-color: #25378c;
@@ -7930,7 +7936,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   box-shadow: 0.3rem 0.3rem 0.6em #f8f9fa;
   transform: scale(1.08, 1.08); }
 
-.main .bt2 {
+.bt2 {
   height: auto;
   width: auto;
   font-size: 18px;
@@ -7941,7 +7947,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   border: 2px solid #90E0EF;
   outline: none; }
 
-.main .bt2:hover {
+.bt2:hover {
   color: #00B4D8;
   background-color: #FFF;
   border-color: #00B4D8;
@@ -8008,7 +8014,7 @@ a.dropdown-item:focus, a.dropdown-item:hover {
   flex-direction: column;
   justify-content: space-between; }
 
-h3, .h3 {
+h2, .h2 {
   color: #25378c;
   font-width: 700; }
 
@@ -8078,7 +8084,7 @@ a.btn.btn-card-light {
 a.btn.btn-card-light:hover {
   text-decoration: underline; }
 
-.progetti-recenti h3, .progetti-recenti .h3,
+.progetti-recenti h2, .progetti-recenti .h2,
 .progetti-recenti p {
   text-align: center; }
 
@@ -8249,44 +8255,6 @@ h4.card-text, .card-text.h4 {
   justify-content: center;
   text-align: center; }
 
-.proposte-lavoro .bt1 {
-  height: auto;
-  width: auto;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  background-color: #25378c;
-  border: 2px solid #25378c;
-  outline: none;
-  transition-duration: 0.6s; }
-
-.proposte-lavoro .bt1:hover {
-  color: #FFFFFF;
-  background-color: #25378c;
-  border-color: #25378c;
-  /*#0077B6;*/
-  transition: 0.5s;
-  box-shadow: 0.3rem 0.3rem 0.6em #f8f9fa;
-  transform: scale(1.08, 1.08); }
-
-.proposte-lavoro .bt2 {
-  height: auto;
-  width: auto;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 10px 20px 10px 20px;
-  color: #90E0EF;
-  background-color: transparent;
-  border: 2px solid #90E0EF;
-  outline: none; }
-
-.proposte-lavoro .bt2:hover {
-  color: #00B4D8;
-  background-color: #FFF;
-  border-color: #00B4D8;
-  transition: 0.5s; }
-
 /* ------ Recensioni ------*/
 .recensioni {
   background: url(../img/home/review.gif) no-repeat;
@@ -8300,27 +8268,6 @@ h4.card-text, .card-text.h4 {
   justify-content: center;
   text-align: center; }
 
-.recensioni .bt1 {
-  height: auto;
-  width: auto;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 10px 20px 10px 20px;
-  color: white;
-  background-color: #25378c;
-  border: 2px solid #25378c;
-  outline: none;
-  transition-duration: 0.6s; }
-
-.recensioni .bt1:hover {
-  color: #FFFFFF;
-  background-color: #25378c;
-  border-color: #25378c;
-  /*#0077B6;*/
-  transition: 0.5s;
-  box-shadow: 0.3rem 0.3rem 0.6em #f8f9fa;
-  transform: scale(1.08, 1.08); }
-
 .review {
   display: flex;
   flex-direction: column;
@@ -8331,6 +8278,7 @@ h4.card-text, .card-text.h4 {
 .img-review {
   width: 160%; }
 
+/*------ Breakpoint ------*/
 @media (min-width: 768px) {
   /*-- progetti recenti --*/
   h4.card-text, .card-text.h4 {
@@ -8349,6 +8297,68 @@ h4.card-text, .card-text.h4 {
     flex-wrap: nowrap;
     align-items: center; } }
 
+/*------ CONTACT ------*/
+.contact h2, .contact .h2 {
+  text-align: center;
+  margin-top: 20px; }
+
+.form-label {
+  color: #25378c;
+  font-weight: 400; }
+
+.contact {
+  background: url(../img/home/mobileUX.gif) no-repeat;
+  background-size: 50%;
+  background-position-x: left;
+  background-position-y: center;
+  height: 100vh; }
+
+.contact-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+/*------ ABOUT ME ------*/
+.about-me h2, .about-me .h2 {
+  text-align: center;
+  margin-top: 20px; }
+
+.about-me .profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center; }
+
+img.rounded.mx-auto.d-block.profile {
+  width: 40%; }
+
+.progress-bar {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  overflow: hidden !important;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  transition: width .6s ease;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  align-items: center;
+  background-color: #90E0EF !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important; }
+
+.progress-bar p {
+  margin-bottom: 0px; }
+
+.progress {
+  margin-bottom: 20px;
+  padding: 0px !important;
+  border-radius: 50px !important;
+  background-color: #f8f8f8 !important;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
+
 @media (min-width: 992px) {
   .main,
   .skills,
@@ -8358,3 +8368,9 @@ h4.card-text, .card-text.h4 {
   /*-- Skills --*/
   .row.icon {
     justify-content: left; } }
+
+@media (min-width: 768px) {
+  /*-- ABOUT ME --*/
+  .progress {
+    width: 47% !important;
+    margin-right: 3%; } }
