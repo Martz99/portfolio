@@ -7941,43 +7941,52 @@ nav.breadcrumb-nav {
   font-weight: 500;
   color: #90E0EF; }
 
-.bt1 {
+a.bt1,
+input.bt1 {
+  display: inline-block;
   height: auto;
   width: auto;
   font-size: 18px;
   font-weight: 400;
   padding: 10px 20px 10px 20px;
   color: white;
+  text-decoration: none !important;
   background-color: #25378c;
   border: 2px solid #25378c;
   outline: none;
   transition-duration: 0.6s; }
 
-.bt1:hover {
+a.bt1:hover,
+input.bt1:hover {
   color: #FFFFFF;
   background-color: #25378c;
   border-color: #25378c;
-  /*#0077B6;*/
   transition: 0.5s;
   box-shadow: 0.3rem 0.3rem 0.6em #f8f9fa;
   transform: scale(1.08, 1.08); }
 
-.bt2 {
+a.bt2 {
+  display: inline-block;
   height: auto;
   width: auto;
   font-size: 18px;
   font-weight: 500;
   padding: 10px 20px 10px 20px;
+  text-decoration: none !important;
   color: #90E0EF;
   background-color: transparent;
   border: 2px solid #90E0EF;
   outline: none; }
 
-.bt2:hover {
+a.bt2:hover {
   color: #00B4D8;
   background-color: #FFF;
   border-color: #00B4D8;
   transition: 0.5s; }
+
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  box-shadow: none !important; }
 
 /* icon bottom */
 .main-text-bottom {
