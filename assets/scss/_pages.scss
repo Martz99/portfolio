@@ -647,10 +647,27 @@ img.rounded.mx-auto.d-block.profile {
   margin-top: 20px;
 }
 
+img.rounded.orizon_brand {
+  width: 60%;
+  float: right;
+  box-shadow: $box-shadow;
+}
 
+.project-link a {
+    color: #212529;
+    text-decoration: none !important;
+}
 
+.project-link a:hover{
+    color: $secondary_color;
+    text-decoration: none !important;
+}
 
-
+img.rounded.futurismo_banner {
+  width: 90%;
+  float: right;
+  box-shadow: $box-shadow;
+}
 
 
 
