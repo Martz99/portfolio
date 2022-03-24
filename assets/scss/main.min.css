@@ -8434,6 +8434,11 @@ img.rounded.orizon_brand {
   float: right;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
+img.rounded.jump {
+  width: 70%;
+  float: left;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
+
 .project-link a {
   color: #212529;
   text-decoration: none !important; }
@@ -8445,6 +8450,17 @@ img.rounded.orizon_brand {
 img.rounded.futurismo_banner {
   width: 90%;
   float: right;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
+
+/*------ WEBDESIGN PORTFOLIO ------*/
+img.rounded.crearreda {
+  width: 80%;
+  float: right;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
+
+img.rounded.stephen {
+  width: 80%;
+  float: left;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
 @media (min-width: 992px) {

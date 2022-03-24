@@ -664,6 +664,12 @@ img.rounded.orizon_brand {
   box-shadow: $box-shadow;
 }
 
+img.rounded.jump {
+  width: 70%;
+  float: left;
+  box-shadow: $box-shadow;
+}
+
 .project-link a {
     color: #212529;
     text-decoration: none !important;
@@ -680,7 +686,19 @@ img.rounded.futurismo_banner {
   box-shadow: $box-shadow;
 }
 
+/*------ WEBDESIGN PORTFOLIO ------*/
 
+img.rounded.crearreda {
+    width: 80%;
+    float: right;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important;
+}
+
+img.rounded.stephen {
+    width: 80%;
+    float: left;
+    box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important;
+}
 
 
 
