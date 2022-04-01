@@ -7928,12 +7928,7 @@ nav.breadcrumb-nav {
 
 /*------ HOME ------*/
 .main {
-  background: url(../img/home/Rocket.gif) no-repeat;
-  background-size: 70%;
-  background-position-x: right;
-  background-position-y: bottom;
   width: 100%;
-  min-height: 100vh;
   text-align: center; }
 
 .main h4, .main .h4 {
@@ -7943,7 +7938,7 @@ nav.breadcrumb-nav {
 
 a.bt1,
 input.bt1 {
-  display: inline-block;
+  /* display: inline-block;*/
   height: auto;
   width: auto;
   font-size: 18px;
@@ -7956,6 +7951,9 @@ input.bt1 {
   outline: none;
   transition-duration: 0.6s; }
 
+/* a.bt1.rounded.my-4.me-4 {
+    margin-left: 1.5rem;
+} */
 a.bt1:hover,
 input.bt1:hover {
   color: #FFFFFF;
@@ -8081,6 +8079,9 @@ h2, .h2 {
   flex-wrap: nowrap;
   justify-content: flex-end; }
 
+.card03 {
+  margin-bottom: 1.5rem !important; }
+
 /* card */
 .card {
   border: none !important;
@@ -8144,7 +8145,7 @@ a.btn.btn-card-light:hover {
   justify-content: center; }
 
 .progetti-recenti .card {
-  width: 75% !important;
+  width: 85% !important;
   transition-duration: 0.6s;
   background-color: #f8f9fa; }
 
@@ -8283,54 +8284,36 @@ h4.card-text, .card-text.h4 {
   background-size: 50%;
   background-position-x: left;
   background-position-y: center;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   text-align: center; }
+
+img.img_lavoro {
+  width: 100%;
+  margin-bottom: 1.5rem; }
 
 /* ------ Recensioni ------*/
+.solo_mobile {
+  display: block; }
+
+.solo_desktop {
+  display: none; }
+
 .recensioni {
-  background: url(../img/home/review.gif) no-repeat;
-  background-size: 50%;
-  background-position-x: right;
-  background-position-y: center;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   text-align: center; }
 
-.review {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start; }
-
 .img-review {
-  width: 160%; }
+  width: 100%;
+  margin-bottom: 1.5rem; }
 
-/*------ Breakpoint ------*/
-@media (min-width: 768px) {
-  /*-- progetti recenti --*/
-  h4.card-text, .card-text.h4 {
-    text-align: left; }
-  p.card-text {
-    text-align: left; }
-  .progetti-recenti .card .col-md-9 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .progetti-recenti .card .col-md-3 {
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center; } }
+.recensioni.bt1 {
+  margin-left: 1.5rem !important; }
 
 /*------ CONTACT ------*/
 .contact h2, .contact .h2 {
@@ -8341,17 +8324,13 @@ h4.card-text, .card-text.h4 {
   color: #25378c;
   font-weight: 400; }
 
-.contact {
-  background: url(../img/home/mobileUX.gif) no-repeat;
-  background-size: 50%;
-  background-position-x: left;
-  background-position-y: center;
-  height: 100vh; }
-
 .contact-form {
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
+
+img.img_contatti {
+  width: 80%; }
 
 /*------ ABOUT ME ------*/
 .about-me h2, .about-me .h2 {
@@ -8431,12 +8410,10 @@ img.rounded.mx-auto.d-block.profile {
 
 img.rounded.orizon_brand {
   width: 60%;
-  float: right;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
 img.rounded.jump {
-  width: 70%;
-  float: left;
+  width: 80%;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
 .project-link a {
@@ -8449,21 +8426,40 @@ img.rounded.jump {
 
 img.rounded.futurismo_banner {
   width: 90%;
-  float: right;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
 /*------ WEBDESIGN PORTFOLIO ------*/
-img.rounded.crearreda {
+img.rounded.crearreda,
+img.rounded.my_portfolio,
+img.rounded.margaret_web {
   width: 80%;
-  float: right;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
-img.rounded.stephen {
+img.rounded.stephen,
+img.rounded.nerobianco,
+img.rounded.futurismo_web {
   width: 80%;
-  float: left;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1) !important; }
 
+/*------ Breakpoint ------*/
 @media (min-width: 992px) {
+  .solo_mobile {
+    display: none; }
+  .solo_desktop {
+    display: block; }
+  a.bt1.rounded.my-4.me-4 {
+    margin-left: 0px !important; }
+  a.bt2.rounded.my-4.me-4 {
+    margin-left: 0px; }
+  /*-- Main --*/
+  .main {
+    background: url(../img/home/Rocket.gif) no-repeat;
+    background-size: 70%;
+    background-position-x: right;
+    background-position-y: bottom;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center; }
   .main,
   .skills,
   .proposte-lavoro,
@@ -8471,10 +8467,86 @@ img.rounded.stephen {
     text-align: left; }
   /*-- Skills --*/
   .row.icon {
-    justify-content: left; } }
+    justify-content: left; }
+  /*-- Progetti Recenti --*/
+  .progetti-recenti .card {
+    width: 75% !important;
+    transition-duration: 0.6s;
+    background-color: #f8f9fa; }
+  /*-- Proposte lavoro --*/
+  .proposte-lavoro {
+    height: 100vh; }
+  img.img_lavoro {
+    float: left; }
+  /*-- Reviews */
+  .recensioni {
+    height: 100vh; }
+  .img-review {
+    width: 100%;
+    margin-bottom: 0px !important;
+    float: right;
+    margin-right: -5rem !important; }
+  .review {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start; }
+  /*-- GRAPHIC PORTFOLIO --*/
+  img.rounded.orizon_brand {
+    width: 60% !important;
+    float: right; }
+  img.rounded.jump {
+    width: 80% !important;
+    float: left; }
+  img.rounded.futurismo_banner {
+    width: 90% !important;
+    float: right; }
+  /*-- WEB DESIGN PORTFOLIO --*/
+  img.rounded.crearreda,
+  img.rounded.my_portfolio,
+  img.rounded.margaret_web {
+    float: right; }
+  img.rounded.stephen,
+  img.rounded.nerobianco,
+  img.rounded.futurismo_web {
+    float: left; } }
 
 @media (min-width: 768px) {
-  /*-- ABOUT ME --*/
+  /* ---- HOME ----*/
+  /*-- progetti recenti --*/
+  h4.card-text, .card-text.h4 {
+    text-align: left; }
+  p.card-text {
+    text-align: left; }
+  .progetti-recenti .card .col-md-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .progetti-recenti .card .col-md-3 {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center; }
+  /*-- Skills --*/
+  .card03 {
+    margin-bottom: 0px !important; }
+  /*-- proposte lavoro --*/
+  img.img_lavoro {
+    width: 60%; }
+  /*-- recensioni --*/
+  .img-review {
+    width: 100%; }
+  /*---- ABOUT ME ----*/
   .progress {
     width: 47% !important;
-    margin-right: 3%; } }
+    margin-right: 3%; }
+  /*---- GRAPHIC PORTFOLIO ----*/
+  img.rounded.orizon_brand {
+    width: 40%; }
+  img.rounded.jump {
+    width: 50%; }
+  img.rounded.futurismo_banner {
+    width: 60%; } }
