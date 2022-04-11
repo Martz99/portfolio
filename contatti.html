@@ -92,7 +92,8 @@
       </div>
 
       <div class="col-md-6">
-        <form action="mailto:martz1347@gmail.com" method="post" enctype="application/x-www-form-urlencoded" class="row g-3">
+        <form action="https://formspree.io/f/mqknypby" method="post" enctype="application/x-www-form-urlencoded" class="row g-3">
+          <input type="hidden" name="_language" value="it" />
 
           <div class="col-md-6">
             <label for="validationDefaultName" class="form-label">Nome</label>
@@ -106,7 +107,8 @@
 
           <div class="col-12 mb-3">
             <label for="validationDefaultInputEmail" class="form-label">E-mail</label>
-            <input type="email" class="form-control" placeholder="esempio@esempio.com" aria-label="esempio@esempio.com" id="validationDefaultInputEmail" aria-describedby="emailHelp" required>
+            <input type="text" name="email" placeholder="esempio@esempio.com" class="form-control" aria-label="esempio@esempio.com" id="validationDefaultInputEmail" aria-describedby="emailHelp" required/>
+            <!-- <input type="email" class="form-control" placeholder="esempio@esempio.com" aria-label="esempio@esempio.com" id="validationDefaultInputEmail" aria-describedby="emailHelp" required> -->
           </div>
 
           <div class="col-12 mb-3">
@@ -129,6 +131,10 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Recaptcha -->
+ <script src="https://www.google.com/recaptcha/api.js"></script>
+ 
 </body>
 
 
